@@ -5,13 +5,13 @@ class Node:
 
 class LinkedList:
     def __init__(self, value):
-        new_node: Node = Node(value)
+        new_node = Node(value)
         self.head = new_node
         self.tail = new_node
         self.length = 1
 
     def append(self, value):
-        new_node: Node = Node(value)
+        new_node = Node(value)
         if self.length == 0:
             self.head = new_node
             self.tail = new_node
@@ -22,7 +22,7 @@ class LinkedList:
             self.length += 1
 
     def prepend(self, value):
-        new_node: Node = Node(value)
+        new_node = Node(value)
         if self.length == 0:
             self.head = new_node
             self.tail = new_node
@@ -90,7 +90,7 @@ class LinkedList:
         elif index == self.length-1:
             self.append(value)
         else:
-            new_node: Node = Node(value)
+            new_node = Node(value)
             temp = self.head
             for _ in range(index-1):
                 temp = temp.next
@@ -120,7 +120,8 @@ class LinkedList:
             print(temp.value)
             temp = temp.next
 
-my_linked_list: LinkedList = LinkedList(4)
+my_linked_list = LinkedList(4)
+
 my_linked_list.append(5)
 my_linked_list.prepend(9)
 my_linked_list.print_list()

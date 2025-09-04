@@ -2,8 +2,9 @@ class Node:
     def __init__(self, value):
         self.value = value
         self.next = None
+        self.prev = None
 
-class LinkedList:
+class DoublyLinkedList:
     def __init__(self, value):
         new_node = Node(value)
         self.head = new_node
@@ -15,22 +16,11 @@ class LinkedList:
         if self.length == 0:
             self.head = new_node
             self.tail = new_node
-            self.length += 1
         else:
             self.tail.next = new_node
+            new_node.prev = self.tail
             self.tail = new_node
-            self.length += 1
-
-    def reversal(self):
-        temp = self.head
-        self.head = self.tail
-        self.tail = temp
-        before = None
-        for _ in range(self.length):
-            after = temp.next
-            temp.next = before
-            before = temp
-            temp = after
+        self.length += 1
 
     def print_list(self):
         temp = self.head
@@ -38,14 +28,7 @@ class LinkedList:
             print(temp.value)
             temp = temp.next
 
-my_linked_list: LinkedList = LinkedList(4)
-my_linked_list.append(5)
-my_linked_list.append(9)
-my_linked_list.append(3)
-my_linked_list.append(2)
-my_linked_list.print_list()
+my_doubly_linked_list = DoublyLinkedList(2)
 
-print("#########")
-
-my_linked_list.reversal()
-my_linked_list.print_list()
+my_doubly_linked_list.append(5)
+my_doubly_linked_list.print_list()
