@@ -1,5 +1,5 @@
 # List
-num: list = [123, 432, "strjk", 453]
+num = [123, 432, "strjk", 453]
 
 #print list
 print(num)
@@ -38,7 +38,7 @@ print(num)
 print("\n")
 
 # List of Dictionaries
-expenses: dict = [{"Month":"January", "Expense":2200},
+expenses = [{"Month":"January", "Expense":2200},
                   {"Month":"February", "Expense": 2350},
                   {"Month":"March", "Expense": 2600},
                   {"Month":"April", "Expense": 2130},
