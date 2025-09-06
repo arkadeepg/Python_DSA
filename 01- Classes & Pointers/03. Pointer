@@ -1,6 +1,0 @@
-Pointer: A pointer is a special type of variable which stores the memory address of another variable. They can’t store normal values like integers or float or Strings, they can only store Addresses and we can use that address location to print the value which has been stored in that address.
-
-```
-num1 = 11
-num2 = num2
-```
