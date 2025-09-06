@@ -87,7 +87,7 @@ class LinkedList:
             print("Index out of bound")
         elif index == 0:
             self.prepend(value)
-        elif index > self.length:
+        elif index >= self.length:
             self.append(value)
         else:
             new_node = Node(value)
@@ -119,37 +119,3 @@ class LinkedList:
         while temp is not None:
             print(temp.value)
             temp = temp.next
-            
-if __name__ == "__main__":
-    my_linked_list = LinkedList(4)
-
-    my_linked_list.append(5)
-    my_linked_list.prepend(9)
-    my_linked_list.print_list()
-
-    my_linked_list.get_value(1)
-    my_linked_list.set_value(1,2)
-    my_linked_list.print_list()
-
-    my_linked_list.get_value(2)
-    my_linked_list.insert(2,7)
-    my_linked_list.print_list()
-
-    my_linked_list.pop()
-    my_linked_list.pop()
-    my_linked_list.pop()
-    my_linked_list.pop()
-    my_linked_list.pop()
-
-    my_linked_list.append(1)
-    my_linked_list.append(3)
-    my_linked_list.print_list()
-
-    my_linked_list.pop_first()
-    my_linked_list.print_list()
-    print("####")
-    my_linked_list.append(5)
-    my_linked_list.append(8)
-    my_linked_list.print_list()
-    my_linked_list.remove(2)
-    my_linked_list.print_list()
