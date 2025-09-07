@@ -2,5 +2,21 @@ Pointer: A pointer is a special type of variable which stores the memory address
 
 ```
 num1 = 11
-num2 = num2
+num2 = num1
+```
+
+```
+Examples of built-in mutable(values can be changed after creation) types include:
+
+    list
+    dict
+    set
+```
+
+```
+Examples of built-in immutable(values can't be changed after creation) types include:
+
+    int, float, complex, bool (numeric types)
+    str
+    tuple
 ```

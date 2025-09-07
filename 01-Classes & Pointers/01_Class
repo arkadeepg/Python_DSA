@@ -1,4 +1,5 @@
-Class: A class in Python is a user-defined template/ data-structure for creating objects/ instances. It bundles data and functions together, making it easier to manage and use them.
+Class: A Class in Python is a user-defined template/ data-structure for creating objects/ instances. 
+It bundles data and functions together, making it easier to manage and use them.
 
 ```
 class LinkedList:
