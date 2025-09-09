@@ -1,0 +1,7 @@
+## O(log n): Logarithmic Time Algorithm
+Number of elements- n
+Number of operations- log n
+
+Input will decrease in size as the algorithm moves along.
+
+-> Binary Search (Divide and Conquer)
