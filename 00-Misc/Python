@@ -1,0 +1,46 @@
+DSA:
+-------------------------
+Array(Lists)
+Linked Lists
+Doubly Linked Lists
+Stacks & Queues
+Trees
+Hash Maps(Dictionary)
+Graphs
+Heaps
+Recursion
+Tree Traversal
+Basic Sorts
+Merge Sort
+Quick Sort
+Dynamic Programming
+
+Beginner:
+-------------------------
+Python Packages/ Modules/ Imports(reusable Classes and Functions)
+File Handling
+Error Handling(try/ except/ finally)
+Debugging
+Virtual Environments
+requirements.txt
+pip
+Terminal Usage
+Git(Version Control)
+
+Intermediate:
+-------------------------
+List Comprehensions
+Generator Expressions
+with Statements(context managers)
+Decorators
+*args, **kwargs
+Type Hints(Type Annotations)
+Docstrings
+
+Advanced:
+-------------------------
+Threading vs Multiprocessing
+AsyncIO
+GIL(Global Interpreter Lock)
+Python versions- features
+CPython/ PyPy/ MicroPython

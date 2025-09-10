@@ -1,0 +1,21 @@
+### Practice questions: 
+https://github.com/codebasics/data-structures-algorithms-python/tree/master/data_structures
+
+### Time complexity notes:
+https://neetcode.io/courses/lessons/big-o-notation
+
+### Hashmap/ Hash Table/ Hash Set:
+https://medium.com/@abasaeed/understanding-hash-maps-hash-tables-and-hash-sets-in-python-c0a78b1e131
+
+### Array operations:
+- Traversal
+- Find
+- Insert
+- Remove
+- Revrsal
+- Remove duplicate
+
+### Built in data-types features:
+- Mutable/ Immutable
+- Ordered/ Unordered
+- Can/ Can't contain duplicates
