@@ -1,11 +1,11 @@
 class HashMap:
-    def __init__(self, size = 7):
+    def __init__(self, size = 7):       # 7 or any prime number to reduce collision
         self.data_map = [None] * size
 
     def __hash__(self, key):        # Hash Function
         my_hash = 0
         for letter in key:
-            my_hash = (my_hash + ord(letter) * 23) % len(self.data_map)
+            my_hash = (my_hash + ord(letter) * 23) % len(self.data_map)     # 23 or any prime number
         return my_hash
     
     def set_item(self, key, value):
