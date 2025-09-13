@@ -2,20 +2,20 @@ class HashMap:
     def __init__(self, size = 7):       # 7 or any prime number to reduce collision
         self.data_map = [None] * size
 
-    def __hash__(self, key):        # Hash Function
+    def _hash(self, key):        # Hash Function
         my_hash = 0
         for letter in key:
             my_hash = (my_hash + ord(letter) * 23) % len(self.data_map)     # 23 or any prime number
         return my_hash
     
     def set_item(self, key, value):
-        index = self.__hash__(key)
+        index = self._hash(key)
         if self.data_map[index] == None:
             self.data_map[index] = []
         self.data_map[index].append([key, value])
 
     def get_item(self, key):
-        index = self.__hash__(key)
+        index = self._hash(key)
         if self.data_map[index] is not None:
             for i in range(len(self.data_map[index])):
                 if self.data_map[index][i][0] == key:
