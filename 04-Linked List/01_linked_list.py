@@ -10,6 +10,8 @@ class LinkedList:
         self.tail = new_node
         self.length = 1
 
+    # O(1) Linear time- with Tail
+    # O(n) Linear time- without Tail
     def append(self, value):
         new_node = Node(value)
         if self.length == 0:
@@ -21,6 +23,7 @@ class LinkedList:
             self.tail = new_node
             self.length += 1
 
+    # O(1) Constant time
     def prepend(self, value):
         new_node = Node(value)
         if self.length == 0:
@@ -33,6 +36,7 @@ class LinkedList:
             self.head.next = temp
             self.length += 1
 
+    # O(n) Linear time
     def pop(self):
         if self.length == 0:
             print("LL is empty")
@@ -51,6 +55,7 @@ class LinkedList:
             self.length -= 1
             print(f"Popped {temp.value}")
 
+    # O(1) Constant time
     def pop_first(self):
         if self.length == 0:
             print("LL is empty")
@@ -64,6 +69,7 @@ class LinkedList:
             self.head = self.head.next
             self.length -= 1
 
+    # O(n) Linear time
     def get_value(self, index):
         if index < 0 or index >= self.length:
             print("Index out of bound")
@@ -73,6 +79,7 @@ class LinkedList:
                 temp = temp.next
             print(f"Got {temp.value}")
 
+    # O(n) Linear time
     def set_value(self, index, value):
         if index < 0 or index >= self.length:
             print("Index out of bound")
@@ -82,6 +89,7 @@ class LinkedList:
                 temp = temp.next
             temp.value = value
 
+    # O(n) Linear time
     def insert(self, index, value):
         if index < 0:
             print("Index out of bound")
@@ -98,6 +106,7 @@ class LinkedList:
             temp.next = new_node
             self.length += 1
 
+    # O(n) Linear time
     def remove(self, index):
         if index < 0 or index >= self.length:
             print("Index out of bound")
