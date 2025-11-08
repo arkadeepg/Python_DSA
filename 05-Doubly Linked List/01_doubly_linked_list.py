@@ -11,6 +11,7 @@ class DoublyLinkedList:
         self.tail = new_node
         self.length = 1
 
+    # O(1) Constant time
     def append(self, value):
         new_node = Node(value)
         if self.length == 0:
@@ -22,6 +23,7 @@ class DoublyLinkedList:
             self.tail = new_node
         self.length += 1
 
+    # O(1) Constant time
     def pop(self):
         if self.length == 0:
             print("DLL is empty")
@@ -37,6 +39,7 @@ class DoublyLinkedList:
         self.length -= 1
         print(f"Popped {temp.value}")
 
+    # O(1) Constant time
     def prepend(self, value):
         new_node = Node(value)
         if self.length == 0:
@@ -48,6 +51,7 @@ class DoublyLinkedList:
             self.head = new_node
         self.length += 1
 
+    # O(1) Constant time
     def pop_first(self):
         if self.length == 0:
             print("DLL is empty")
@@ -63,6 +67,7 @@ class DoublyLinkedList:
         self.length -= 1
         print(f"Popped {temp.value}")
 
+    # O(n) Linear time
     def get_value(self, index):
         if index < 0 or index >= self.length:
             print("Index out of bound")
@@ -77,6 +82,7 @@ class DoublyLinkedList:
                     temp = temp.prev
             print(temp.value)
 
+    # O(n) Linear time
     def set_value(self, index, value):
         if index < 0 or index >= self.length:
             print("Index out of bound")
@@ -91,6 +97,7 @@ class DoublyLinkedList:
                     temp = temp.prev
             temp.value = value
 
+    # O(n) Linear time
     def insert(self, index, value):
         if index < 0:
             print("Index out of bound")
@@ -115,6 +122,7 @@ class DoublyLinkedList:
             temp.prev = new_node
             self.length += 1
 
+    # O(n) Linear time
     def remove(self, index):
         if index < 0 or index >= self.length:
             print("Index out of bound")
