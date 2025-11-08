@@ -9,6 +9,7 @@ class Stack:
         self.top = new_node
         self.height = 1
 
+    # O(1) Constant time
     def push(self, value):
         new_node = Node(value)
         if self.height != 0:
@@ -16,6 +17,7 @@ class Stack:
         self.top = new_node
         self.height += 1
 
+    # O(1) Constant time
     def pop(self):
         if self.height == 0:
             print("Stack is empty")
